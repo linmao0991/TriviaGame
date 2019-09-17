@@ -72,7 +72,7 @@ function questionTimer(){
     timerCount--;
     }else{
         $("#questionTimer").html("Time Left: "+timerCount)
-        alert("Out of Time");
+        alert("Out of Time! Correc answer was: "+movieArray[movieIndex].correct_answer);
         timerStop();
         clearRound();
         nextQuestion();
@@ -145,7 +145,7 @@ $(document).on("click",".answerSel", function(){
     }else{
         incorrectCount++;
         $("#incorrectCount").text(incorrectCount);
-        alert("Wrong!");
+        alert("Wrong! Correct answer was: "+movieArray[movieIndex].correct_answer);
         clearRound();
         timerStop();
         nextQuestion();
