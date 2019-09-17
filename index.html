@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="bg-dark">
-    <div class="jumbotron rounded m-2 text-center">
-        <h1>Movie Trivia Game!</h1>
+    <div class="jumbotron rounded m-4 text-center text-black">
+        <h1 class="rounded title">Movie Trivia Game!</h1>
     </div>
 
     <!-- On Page Load Modal -->
@@ -50,7 +50,7 @@
       </div>
 
     <!-- Div to hold all game elements -->
-    <div class="col border rounded mx-auto w-75">
+    <div id="mainBox" class="col mainBox border rounded mx-auto w-75">
         <div class="row">
           <!-- Div for the question -->
           <div id="triviaQuestion" class="col text-white rounded m-2 mx-auto">
@@ -58,6 +58,7 @@
           </div>
         </div>
 
+        <!-- Timr Row -->
         <div class="row">
           <div class="col m-2 mx-auto text-center">
             <h2 id="questionTimer" class="text-white mx-auto text-center">Timer</h2>
@@ -65,15 +66,18 @@
         </div>
 
         <div class="row">
-          <!-- Div for the answer choices -->
+          <!-- Correctly Answered Scoreboard -->
           <div class="col-2 text-white text-center mx-auto">
             <h3>Correctly Answered</h3>
             <h4 id="correctCount"></h4>
           </div>
+
+          <!-- Div for the answer choices -->
           <div id="answerChoices" class="col-8 btn-group-vertical m-1 mx-auto p-1">
 
           </div>
 
+           <!-- Incorrectly Answered Scoreboard -->
           <div class="col-2 text-white text-center mx-auto">
               <h3>Incorrectly Answered</h3>
               <h4 id="incorrectCount"></h4>
