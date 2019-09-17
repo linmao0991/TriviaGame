@@ -1,0 +1,11 @@
+#triviaQuestion{
+    height: 150px;
+}
+
+#answerChoices{
+    height: 250px;
+}
+
+#questionTimer{
+    height: 50px;
+}
